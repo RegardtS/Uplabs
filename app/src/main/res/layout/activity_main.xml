@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="flipCard"
+    tools:context="com.regi.uplabs.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/ic_clear_black_24dp"
+        app:title="Submit Credit Card" />
+
+    <FrameLayout
+        android:id="@+id/card_back"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+
+        android:layout_centerInParent="true"
+        >
+
+        <include layout="@layout/card_back" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/card_front"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        >
+
+        <include layout="@layout/card_front" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>
